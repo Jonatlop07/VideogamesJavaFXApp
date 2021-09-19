@@ -27,15 +27,19 @@ public class Game extends Application {
         MenuModelInterface menuModel = new MenuModel();
         MenuControllerInterface menuController = new MenuController( menuModel );
         Scene menuScene = menuController.getViewScene();
-        menuScene.addEventFilter( CustomEvent.START_THE_GAME,
-            (e) -> {
-                AdventureGameModelInterface adventureGameModel = new AdventureGameModel();
-                AdventureGameControllerInterface adventureGameController = new AdventureGameController();
-                Scene adventureGameScene = adventureGameController.getViewScene();
-                primaryStage.setTitle( "Adventure Videogame" );
-                primaryStage.setScene( adventureGameScene );
-                primaryStage.show();
-            });
+        menuScene.addEventFilter( CustomEvent.START_ADVENTURE_GAME,
+            ( e ) -> {
+                try {
+                    AdventureGameModelInterface adventureGameModel = new AdventureGameModel();
+                    AdventureGameControllerInterface adventureGameController = new AdventureGameController( adventureGameModel );
+                    Scene adventureGameScene = adventureGameController.getViewScene();
+                    primaryStage.setTitle( "Adventure Videogame" );
+                    primaryStage.setScene( adventureGameScene );
+                    primaryStage.show();
+                } catch ( IOException ex ) {
+                    ex.printStackTrace();
+                }
+            } );
         stage.setTitle( "Videogame" );
         stage.setScene( menuController.getViewScene() );
         stage.setWidth( 800 );

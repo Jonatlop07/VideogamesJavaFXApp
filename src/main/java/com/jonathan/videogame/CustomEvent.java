@@ -8,5 +8,6 @@ public class CustomEvent extends Event {
         super( eventType );
     }
     
-    public static final EventType<CustomEvent> START_THE_GAME = new EventType<>("START_THE_GAME");
+    public static final EventType<CustomEvent> START_ADVENTURE_GAME = new EventType<>("START_ADVENTURE_GAME");
+    public static final EventType<CustomEvent> START_PLATFORM_GAME = new EventType<>("START_PLATFORM_GAME");
 }

@@ -13,7 +13,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
 public class MenuPane extends AnchorPane {
-    private Button startButton;
+    private Button startAdventureGameButton;
+    private Button startPlatformGameButton;
     
     public MenuPane() {
         init();
@@ -29,21 +30,36 @@ public class MenuPane extends AnchorPane {
                 ) 
             )
         );
-        getChildren().addAll( getStartButton() );
+        getChildren().addAll( getStartAdventureGameButton(), getStartPlatformGameButton() );
     }
     
-    private Button getStartButton() {
-        if ( startButton == null ) {
-            startButton = new Button( "Start" );
-            startButton.setAlignment( Pos.CENTER );
-            startButton.setContentDisplay( ContentDisplay.CENTER );
-            startButton.setLayoutX( 352.0 );
-            startButton.setLayoutY( 228.0 );
-            startButton.setFont( Font.font( 22 ) );
-            startButton.setOnAction( ( e ) -> {
-                fireEvent( new CustomEvent( CustomEvent.START_THE_GAME ) );
+    private Button getStartAdventureGameButton() {
+        if ( startAdventureGameButton == null ) {
+            startAdventureGameButton = new Button( "Start Adventure Game" );
+            startAdventureGameButton.setAlignment( Pos.CENTER );
+            startAdventureGameButton.setContentDisplay( ContentDisplay.CENTER );
+            startAdventureGameButton.setLayoutX( 270.0 );
+            startAdventureGameButton.setLayoutY( 188.0 );
+            startAdventureGameButton.setFont( Font.font( 22 ) );
+            startAdventureGameButton.setOnAction( ( e ) -> {
+                fireEvent( new CustomEvent( CustomEvent.START_ADVENTURE_GAME ) );
             } );
         }
-        return startButton;
+        return startAdventureGameButton;
+    }
+    
+    private Button getStartPlatformGameButton() {
+        if ( startPlatformGameButton == null ) {
+            startPlatformGameButton = new Button( "Start Platform Game" );
+            startPlatformGameButton.setAlignment( Pos.CENTER );
+            startPlatformGameButton.setContentDisplay( ContentDisplay.CENTER );
+            startPlatformGameButton.setLayoutX( 280.0 );
+            startPlatformGameButton.setLayoutY( 248.0 );
+            startPlatformGameButton.setFont( Font.font( 22 ) );
+            startPlatformGameButton.setOnAction( ( e ) -> {
+                fireEvent( new CustomEvent( CustomEvent.START_PLATFORM_GAME ) );
+            } );
+        }
+        return startPlatformGameButton;
     }
 }
