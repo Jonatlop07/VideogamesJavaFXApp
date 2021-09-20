@@ -1,4 +1,4 @@
-package com.jonathan.videogame.adventure_game;
+package com.jonathan.videogame.adventure_game.presentation;
 
 import com.jonathan.videogame.adventure_game.core.interactors.AdventureGameInteractor;
 import javafx.animation.AnimationTimer;

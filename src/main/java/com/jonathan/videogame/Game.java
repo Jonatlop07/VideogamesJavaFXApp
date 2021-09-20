@@ -1,12 +1,12 @@
 package com.jonathan.videogame;
 
-import com.jonathan.videogame.adventure_game.AdventureGameAnimation;
-import com.jonathan.videogame.adventure_game.controller.AdventureGameController;
-import com.jonathan.videogame.adventure_game.controller.AdventureGameControllerInterface;
-import com.jonathan.videogame.adventure_game.model.AdventureGameModel;
-import com.jonathan.videogame.adventure_game.model.AdventureGameModelInterface;
-import com.jonathan.videogame.adventure_game.view.AdventureGamePane;
-import com.jonathan.videogame.adventure_game.view.AdventureGameScene;
+import com.jonathan.videogame.adventure_game.presentation.AdventureGameAnimation;
+import com.jonathan.videogame.adventure_game.presentation.controller.AdventureGameController;
+import com.jonathan.videogame.adventure_game.presentation.controller.AdventureGameControllerInterface;
+import com.jonathan.videogame.adventure_game.presentation.model.AdventureGameModel;
+import com.jonathan.videogame.adventure_game.presentation.model.AdventureGameModelInterface;
+import com.jonathan.videogame.adventure_game.presentation.view.AdventureGamePane;
+import com.jonathan.videogame.adventure_game.presentation.view.AdventureGameScene;
 import com.jonathan.videogame.menu.controller.MenuController;
 import com.jonathan.videogame.menu.controller.MenuControllerInterface;
 import com.jonathan.videogame.menu.model.MenuModel;

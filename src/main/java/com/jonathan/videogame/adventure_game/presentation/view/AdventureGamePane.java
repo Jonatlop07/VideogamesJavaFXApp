@@ -1,4 +1,4 @@
-package com.jonathan.videogame.adventure_game.view;
+package com.jonathan.videogame.adventure_game.presentation.view;
 
 import javafx.scene.canvas.Canvas;
 import javafx.scene.layout.AnchorPane;

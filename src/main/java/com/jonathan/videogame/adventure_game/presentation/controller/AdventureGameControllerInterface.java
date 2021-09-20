@@ -1,4 +1,4 @@
-package com.jonathan.videogame.adventure_game.controller;
+package com.jonathan.videogame.adventure_game.presentation.controller;
 
 import com.jonathan.videogame.abstractions.Controller;
 

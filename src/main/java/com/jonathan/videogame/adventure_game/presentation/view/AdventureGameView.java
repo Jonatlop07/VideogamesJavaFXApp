@@ -1,8 +1,8 @@
-package com.jonathan.videogame.adventure_game.view;
+package com.jonathan.videogame.adventure_game.presentation.view;
 
 import com.jonathan.videogame.abstractions.View;
-import com.jonathan.videogame.adventure_game.controller.AdventureGameControllerInterface;
-import com.jonathan.videogame.adventure_game.model.AdventureGameModelInterface;
+import com.jonathan.videogame.adventure_game.presentation.controller.AdventureGameControllerInterface;
+import com.jonathan.videogame.adventure_game.presentation.model.AdventureGameModelInterface;
 
 import java.io.IOException;
 

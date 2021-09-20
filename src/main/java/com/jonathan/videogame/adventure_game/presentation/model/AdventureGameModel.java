@@ -1,4 +1,4 @@
-package com.jonathan.videogame.adventure_game.model;
+package com.jonathan.videogame.adventure_game.presentation.model;
 
 public class AdventureGameModel implements AdventureGameModelInterface {
     
