@@ -21,13 +21,13 @@ public class MenuPane extends AnchorPane {
     }
     
     private void init() {
-        setBackground( 
-            new Background( 
-                new BackgroundFill( 
-                    Color.valueOf( "#e6e1f0" ), 
-                    CornerRadii.EMPTY, 
-                    Insets.EMPTY 
-                ) 
+        setBackground(
+            new Background(
+                new BackgroundFill(
+                    Color.valueOf( "#e6e1f0" ),
+                    CornerRadii.EMPTY,
+                    Insets.EMPTY
+                )
             )
         );
         getChildren().addAll( getStartAdventureGameButton(), getStartPlatformGameButton() );

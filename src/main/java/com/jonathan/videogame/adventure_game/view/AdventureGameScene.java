@@ -7,7 +7,11 @@ public class AdventureGameScene extends Scene {
     private Pane pane;
     
     public AdventureGameScene() {
-        super( new AdventurePane() );
-        pane = ( AdventurePane ) getRoot();
+        super( new AdventureGamePane() );
+        pane = ( AdventureGamePane ) getRoot();
+    }
+    
+    public Pane getPane() {
+        return pane;
     }
 }
