@@ -1,6 +1,6 @@
 package com.jonathan.videogame;
 
-import com.jonathan.videogame.adventure_game.presentation.AdventureGameAnimation;
+import com.jonathan.videogame.adventure_game.core.interactors.AdventureGameAnimation;
 import com.jonathan.videogame.adventure_game.presentation.controller.AdventureGameController;
 import com.jonathan.videogame.adventure_game.presentation.controller.AdventureGameControllerInterface;
 import com.jonathan.videogame.adventure_game.presentation.model.AdventureGameModel;
