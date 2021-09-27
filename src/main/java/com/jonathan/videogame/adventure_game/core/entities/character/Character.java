@@ -1,8 +1,16 @@
 package com.jonathan.videogame.adventure_game.core.entities.character;
 
+import javafx.geometry.Dimension2D;
+import javafx.scene.canvas.GraphicsContext;
+
 public abstract class Character {
     protected CharacterState state;
-    private CharacterSprite sprite;
+    protected CharacterSprite sprite;
+    
+    public void render( GraphicsContext drawer ) {
+        Dimension2D spriteDimension = sprite.getDimension();
+        drawer.drawImage( sprite.getImage(), 0, 0 );
+    }
     
     public abstract void walk();
     

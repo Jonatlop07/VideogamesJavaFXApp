@@ -1,6 +1,6 @@
 package com.jonathan.videogame;
 
-import com.jonathan.videogame.adventure_game.core.interactors.AdventureGameAnimation;
+import com.jonathan.videogame.adventure_game.core.interactors.AdventureGameRunner;
 import com.jonathan.videogame.adventure_game.presentation.controller.AdventureGameController;
 import com.jonathan.videogame.adventure_game.presentation.controller.AdventureGameControllerInterface;
 import com.jonathan.videogame.adventure_game.presentation.model.AdventureGameModel;
@@ -39,7 +39,9 @@ public class Game extends Application {
                     AdventureGameScene adventureGameScene = ( AdventureGameScene ) adventureGameController.getViewScene();
                     AdventureGamePane adventureGamePane = ( AdventureGamePane ) adventureGameScene.getPane();
                     GraphicsContext drawer = adventureGamePane.getCanvas().getGraphicsContext2D();
-                    AdventureGameAnimation animation = new AdventureGameAnimation( adventureGameScene, drawer );
+                    adventureGamePane.getCanvas().setWidth( 800 );
+                    adventureGamePane.getCanvas().setHeight( 600 );
+                    AdventureGameRunner animation = new AdventureGameRunner( adventureGameScene, drawer );
                     animation.start();
                     primaryStage.setTitle( "Adventure Videogame" );
                     primaryStage.setScene( adventureGameScene );
