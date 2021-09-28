@@ -2,6 +2,7 @@ package com.jonathan.videogame.adventure_game.core.entities.character.human.knig
 
 import com.jonathan.videogame.adventure_game.core.entities.character.CharacterSprite;
 import com.jonathan.videogame.adventure_game.core.entities.character.CharacterState;
+import com.jonathan.videogame.adventure_game.core.entities.character.Vector2;
 import com.jonathan.videogame.adventure_game.core.entities.character.human.knight.Knight;
 import javafx.geometry.Dimension2D;
 import javafx.scene.canvas.GraphicsContext;
@@ -9,16 +10,8 @@ import javafx.scene.canvas.GraphicsContext;
 public class SwordKnight extends Knight {
     public SwordKnight( CharacterSprite sprite ) {
         this.sprite = sprite;
-    }
-    
-    @Override
-    public void walk() {
-        
-    }
-    
-    @Override
-    public void stop() {
-        
+        this.position = Vector2.zero;
+        this.velocity = Vector2.zero;
     }
     
     @Override

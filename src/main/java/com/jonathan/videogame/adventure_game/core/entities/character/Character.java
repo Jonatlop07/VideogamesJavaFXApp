@@ -7,14 +7,21 @@ public abstract class Character {
     protected CharacterState state;
     protected CharacterSprite sprite;
     
+    protected Vector2 position;
+    protected Vector2 velocity;
+    
     public void render( GraphicsContext drawer ) {
         Dimension2D spriteDimension = sprite.getDimension();
         drawer.drawImage( sprite.getImage(), 0, 0 );
     }
     
-    public abstract void walk();
+    public void handleInput( String code ) {
+        state.handleInput( this, code );
+    }
     
-    public abstract void stop();
+    public void update() {
+        state.update( this );
+    }
     
     protected void changeStateTo( CharacterState newState ) {
         this.state = newState;

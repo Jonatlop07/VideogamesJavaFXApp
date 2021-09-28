@@ -6,6 +6,6 @@ import com.jonathan.videogame.adventure_game.core.entities.character.human.Human
 public class KnightFactory extends HumanFighterFactory {
     @Override
     public Knight create() {
-        return new SwordKnight( new CharacterSprite( 200, 400, "knight/png/Idle (1).png" ) );
+        return new SwordKnight( new CharacterSprite( 100, 200, "knight/png/Idle (1).png" ) );
     }
 }
